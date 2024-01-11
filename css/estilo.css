@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: bisque;
+}
+
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.encabezado h1 {
+
+    text-transform: uppercase;
+    font-weight: 700px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+
+}
+
+
+.boton {
+    background-color: red;
+    color: blanchedalmond;
+    font-weight: 700px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.boton:hover {
+    background-color: aqua;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.encabezado li {
+    list-style: none;
+    margin: 10px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.encabezado li a:hover {
+    color: brown;
+}
+.banner {
+    background-image: url(../imagenes/banner-1.jpg);
+    height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.bannerContenido h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bannerContenido p {
+    color: #fafafa;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.bannerContenido .boton {
+    margin-top: 10px;
+}
+
+.destinos {
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+.secciones h3 {
+    color: red;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.secciones p {
+    font-size: 4rem;
+    color: black;
+    padding: 10px;
+}
+.contenedorSecciones {
+    display: grid;
+    grid-template-columns: repeat( 1fr 1fr 1fr);
+    gap: 20px;
+    text-align: center;
+}
+.secciones {
+    border: 1px solid #fafafa;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+}
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border: 1PX solid #fafafa;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.tarjeta img {
+    max-width: 100%;
+}
+.tarjeta p {
+margin: 10px 0;
+}
+.tarjeta button {
+    background-color: blue;
+    color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+}
+/* Ajustes generales para el carousel */
+#carouselExample {
+    max-width: 700px; /* Ancho máximo del carousel, ajusta según sea necesario */
+    margin: 30px auto; /* Centra el carousel y ajusta el margen superior según sea necesario */
+}
+
+
+.carousel-inner img {
+    width: 50%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.color  {
+ background-color: violet;
+
+}
+@media (max-width: 1023px) {
+    .listaInicio {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listaInicio .boton {
+        display: none;
+    }
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    .destinos {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .secciones h3,
+    .secciones p
+    {
+        font-size: inherits ;
+    }
+    .contenedorSecciones {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .contenedorGuias {
+        flex-direction: column;
+    }
+    .footerSecciones{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.tarjeta img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+}
+.logoWhasap {
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    }
+    
+}
